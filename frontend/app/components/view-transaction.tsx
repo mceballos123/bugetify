@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { getAllTransactions } from "@/lib/actions"
+//import { getAllTransactions } from "@/lib/actions"
+import { getAllTransactions } from "../lib/actions"
 import TransactionDetails from "./transaction-detail"
 
 export default function ViewTransactions() {

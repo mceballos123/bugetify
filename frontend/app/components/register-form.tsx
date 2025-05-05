@@ -3,8 +3,8 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { useRouter } from "next/navigation"
-import { registerUser } from "@/lib/actions"
-
+//import { registerUser } from "@/lib/actions"
+import { registerUser } from "../lib/actions"
 export default function RegisterForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const router = useRouter()

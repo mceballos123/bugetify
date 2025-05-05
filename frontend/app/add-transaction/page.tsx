@@ -3,9 +3,9 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { getTransaction, deleteTransactionById, getAllTransactions } from "@/lib/actions"
-import { Dialog } from "@/components/dialog" // Update the path to the correct location of the Dialog component
-
+//import { getTransaction, deleteTransactionById, getAllTransactions } from "@/lib/actions"
+import { getTransaction,deleteTransactionById,getAllTransactions } from "../lib/actions"
+import { Dialog } from "@radix-ui/react-dialog"
 interface TransactionDetailsProps {
   onOpen: boolean
   onClose: () => void
