@@ -3,8 +3,10 @@
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { useRouter } from "next/navigation"
-import { loginUser } from "@/lib/actions"
-import { useAuth } from "@/components/auth/auth-provider"
+//import { loginUser } from "@/lib/actions"
+import { loginUser } from "../lib/actions"
+//import { useAuth } from "@/components/auth/auth-provider"
+import { useAuth } from "./auth/auth-provider"
 
 export default function LoginForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)

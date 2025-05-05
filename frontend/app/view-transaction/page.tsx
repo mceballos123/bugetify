@@ -2,9 +2,9 @@
 
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
-import ViewTransactions from "@/components/view-transactions"
-import SideBar from "@/components/sidebar"
-import { useAuth } from "@/components/auth/auth-provider"
+import ViewTransactions from "../components/view-transaction"
+import { Sidebar } from "@/components/ui/sidebar"
+import { useAuth } from "../components/auth/auth-provider"
 
 export default function ViewTransactionPage() {
   const router = useRouter()
@@ -22,7 +22,7 @@ export default function ViewTransactionPage() {
 
   return (
     <div className="bg-gray-200 min-h-screen flex">
-      <SideBar />
+      <Sidebar />
       <ViewTransactions />
     </div>
   )

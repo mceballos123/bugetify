@@ -3,9 +3,10 @@
 import type React from "react"
 
 import { useState, useEffect } from "react"
-import { getTransaction, deleteTransactionById, getAllTransactions } from "@/lib/actions"
-import { Dialog } from "@/components/ui/dialog"
-
+//import { getTransaction, deleteTransactionById, getAllTransactions } from "@/lib/actions"
+import { getTransaction,deleteTransactionById,getAllTransactions } from "../lib/actions"
+import { Dialog } from "@/components/ui/dialog" 
+     
 interface TransactionDetailsProps {
   onOpen: boolean
   onClose: () => void
