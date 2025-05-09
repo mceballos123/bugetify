@@ -70,5 +70,19 @@ public class UserDAO {
         }
     }
 
-}
+    public static void deleteUser(int userId) {
+        String sql = "DELETE FROM Users WHERE UserID = ?";
 
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement stmt = conn.prepareStatement(sql)) {
+    
+            stmt.setInt(1, userId);
+            stmt.executeUpdate();
+
+            System.out.println("✅ User deleted: " + userId);
+
+        } catch (SQLException e) {
+            System.out.println("❌ Failed to delete user: " + e.getMessage());
+        }
+    }
+}
