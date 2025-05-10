@@ -1,9 +1,9 @@
 # Budgetify: A Student Budgeting Application
 
 **Authors:**
-- Sherine Aldrin (017197492) – sherine.aldrin@sjsu.edu  
-- Mariam Jamil – mariam.jamil@sjsu.edu  
-- Martin Ceballos (015476370) – martin.ceballos@sjsu.edu  
+- Sherine Aldrin  
+- Mariam Jamil 
+- Martin Ceballos  
 
 **Date:** May 9, 2025
 
