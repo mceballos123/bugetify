@@ -76,7 +76,7 @@ public class TransactionDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to update transaction: " + e.getMessage());
+            System.out.println("Failed to update transaction: " + e.getMessage());
         }
     }
 
@@ -97,7 +97,7 @@ public class TransactionDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to delete transaction: " + e.getMessage());
+            System.out.println("Failed to delete transaction: " + e.getMessage());
         }
     }
 

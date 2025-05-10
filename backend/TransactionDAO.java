@@ -20,10 +20,10 @@ public class TransactionDAO {
             stmt.setString(6, method);
 
             stmt.executeUpdate();
-            System.out.println("✅ Transaction added for user " + userId);
+            System.out.println(" Transaction added for user " + userId);
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to add transaction: " + e.getMessage());
+            System.out.println(" Failed to add transaction: " + e.getMessage());
         }
     }
 
@@ -49,7 +49,7 @@ public class TransactionDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to fetch transactions: " + e.getMessage());
+            System.out.println("Failed to fetch transactions: " + e.getMessage());
         }
 
         return transactions;
@@ -70,13 +70,13 @@ public class TransactionDAO {
 
             int rowsUpdated = stmt.executeUpdate();
             if (rowsUpdated > 0) {
-                System.out.println("✅ Transaction updated.");
+                System.out.println(" Transaction updated.");
             } else {
-                System.out.println("⚠️ No transaction found with that ID.");
+                System.out.println(" No transaction found with that ID.");
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to update transaction: " + e.getMessage());
+            System.out.println(" Failed to update transaction: " + e.getMessage());
         }
     }
 
@@ -91,13 +91,13 @@ public class TransactionDAO {
             int rowsDeleted = stmt.executeUpdate();
 
             if (rowsDeleted > 0) {
-                System.out.println("✅ Transaction deleted.");
+                System.out.println("Transaction deleted.");
             } else {
-                System.out.println("⚠️ No transaction found with that ID.");
+                System.out.println(" No transaction found with that ID.");
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to delete transaction: " + e.getMessage());
+            System.out.println(" Failed to delete transaction: " + e.getMessage());
         }
     }
 

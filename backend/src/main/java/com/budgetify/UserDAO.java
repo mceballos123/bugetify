@@ -16,10 +16,10 @@ public class UserDAO {
             stmt.setString(3, password);
             stmt.executeUpdate();
 
-            System.out.println("✅ User added: " + email);
+            System.out.println(" User added: " + email);
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to add user: " + e.getMessage());
+            System.out.println(" Failed to add user: " + e.getMessage());
         }
     }
 
@@ -40,7 +40,7 @@ public class UserDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to fetch users: " + e.getMessage());
+            System.out.println(" Failed to fetch users: " + e.getMessage());
         }
 
         return users;
@@ -57,15 +57,15 @@ public class UserDAO {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                System.out.println("✅ Login successful for " + email);
+                System.out.println(" Login successful for " + email);
                 return true;
             } else {
-                System.out.println("❌ Login failed for " + email);
+                System.out.println(" Login failed for " + email);
                 return false;
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Login error: " + e.getMessage());
+            System.out.println(" Login error: " + e.getMessage());
             return false;
         }
     }

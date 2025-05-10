@@ -40,9 +40,9 @@ public class Main {
         boolean success = UserDAO.validateLogin("mariam@example.com", "password123");
 
         if (success) {
-            System.out.println("Logged in ✅");
+            System.out.println("Logged in ");
         } else {
-            System.out.println("Invalid credentials ❌");
+            System.out.println("Invalid credentials ");
         }
 
     }

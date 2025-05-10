@@ -16,10 +16,10 @@ public class BudgetDAO {
             stmt.setString(3, month);
 
             stmt.executeUpdate();
-            System.out.println("✅ Budget added for user " + userId + " (" + month + ")");
+            System.out.println(" Budget added for user " + userId + " (" + month + ")");
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to add budget: " + e.getMessage());
+            System.out.println(" Failed to add budget: " + e.getMessage());
         }
     }
 
@@ -42,7 +42,7 @@ public class BudgetDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to fetch budgets: " + e.getMessage());
+            System.out.println("Failed to fetch budgets: " + e.getMessage());
         }
 
         return budgets;

@@ -42,7 +42,7 @@ public class BudgetDAO {
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Failed to fetch budgets: " + e.getMessage());
+            System.out.println(" Failed to fetch budgets: " + e.getMessage());
         }
 
         return budgets;

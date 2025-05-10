@@ -57,15 +57,15 @@ public class UserDAO {
             ResultSet rs = stmt.executeQuery();
 
             if (rs.next()) {
-                System.out.println("✅ Login successful for " + email);
+                System.out.println(" Login successful for " + email);
                 return true;
             } else {
-                System.out.println("❌ Login failed for " + email);
+                System.out.println(" Login failed for " + email);
                 return false;
             }
 
         } catch (SQLException e) {
-            System.out.println("❌ Login error: " + e.getMessage());
+            System.out.println(" Login error: " + e.getMessage());
             return false;
         }
     }
